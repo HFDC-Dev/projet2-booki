@@ -16,6 +16,7 @@
 
 <body>
     <div class="main-container">
+        <!-- Header -->
         <header>
             <nav>
                 <div class="logo-booki">
@@ -28,10 +29,27 @@
                 </ul>
             </nav>
         </header>
+        <!-- Formulaire-->
+        <div class="search-hebergement">
+            <div class="hebergement-title">
+                <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="card-subtitle">En plein centre-ville ou en pleine nature</p>
+            </div>
+            <div class="form-container">
+                <form class="form" method="get" action="search">
+                    <label class="location" for="city"><i class="fa-solid fa-location-dot"></i></label>
+                    <select class="select" name="city" id="city" required>
+                        <option value="marseille">Marseille, France</option>
+                    </select>
+                    <button class="btn-search">Rechercher</button>
+                </form>
+            </div>
+        </div>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    
+                    <!--Ce que je vais modifié-->
+
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
