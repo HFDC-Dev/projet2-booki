@@ -145,6 +145,116 @@ input {
     cursor: pointer;
 }
 
+/* Filtres */
+
+.filters {
+    width: 758px;
+    height: 50px;
+    margin-top: 35px;
+}
+
+.filters-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+}
+
+.filters-bar {
+    display: flex;
+    width: 758px;
+    height: 50px;
+    gap: 15px;
+}
+
+.filters-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    width: 173px;
+    height: 50px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 19.96px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #DEEBFF;
+}
+
+.btn-fm {
+    width: 134px;
+    height: 50px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 19.96px;
+    cursor: pointer;
+}
+
+.btn-fm:hover {
+    background-color: #DEEBFF;
+}
+
+.btn i {
+    font-size: 21px;
+    margin-right: 10px;
+}
+
+.btn-fm i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+/* Info logements */
+
+.info {
+    width: 100%;
+    max-width: 1340px;
+    height: 24px;
+    margin-top: 35px;
+}
+
+.info-logements {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-logements i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 10.5px;
+    line-height: 1;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.info-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
 .main-container {
     width: 100%;
     max-width: 1440px;
