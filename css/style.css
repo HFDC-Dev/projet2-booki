@@ -22,30 +22,31 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
     width: 100%;
     height: 79px;
 }
 
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px;
+.logo-booki img {
+    width: 61.09px;
+    margin-top: 35px;
 }
 
-nav img {
-    width: 60px;
-    margin-left: -20px;
+nav {
+    display: flex;
+    width: 100%;
+    max-width: 344px;
+    margin-left: 1000px
 }
 
 nav ul {
     display: flex;
-    margin-right: -5px;
 }
 
 nav ul li {
-    margin: 0 30px;
+    margin: 20px 35px;
 }
 
 span {
@@ -54,16 +55,32 @@ span {
 
 span:hover {
     border-top: 2px solid blue;
-    padding: 22px 0;
-}
-
-.hebergement-title {
-    margin-top: 20px;
-    line-height: 30px;
+    padding: 18px 0;
 }
 
 /* Formulaire */
+
+.hebergement-title {
+    margin-top: 20px;
+    height: 53px;
+    gap: 8px;
+}
+
+.section-title {
+    height: 26px;
+    line-height: 25.83px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 18.78px;
+}
+
 .form-container {
+    margin-top: 35px;
     width: 377px;
     height: 49px;
     gap: 24px;
@@ -138,11 +155,6 @@ input {
 a {
     color: inherit;
     text-decoration: none;
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
 }
 
 .card {
