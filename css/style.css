@@ -21,6 +21,8 @@ body {
     justify-content: center;
 }
 
+/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -36,9 +38,8 @@ header {
 
 nav {
     display: flex;
-    width: 100%;
-    max-width: 344px;
-    margin-left: 1000px
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 
 nav ul {
@@ -294,6 +295,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -306,6 +308,29 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.cards {
+    width: 250px;
+    height: 207px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 0px 0px 15px 0px;
+}
+
+.hebergements-card {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hebergements-card img {
+    width: 250px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 /****** Populaires ***********/
