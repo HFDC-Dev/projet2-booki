@@ -21,7 +21,7 @@ body {
     justify-content: center;
 }
 
-/* Header */
+/****** Header ******/
 
 header {
     display: flex;
@@ -59,7 +59,7 @@ span:hover {
     padding: 18px 0;
 }
 
-/* Formulaire */
+/****** Formulaire ******/
 
 .hebergement-title {
     margin-top: 20px;
@@ -146,7 +146,7 @@ input {
     cursor: pointer;
 }
 
-/* Filtres */
+/****** Filtres ******/
 
 .filters {
     width: 758px;
@@ -221,7 +221,7 @@ input {
     margin-right: 10px;
 }
 
-/* Info logements */
+/****** Info logements ******/
 
 .info {
     width: 100%;
@@ -312,10 +312,11 @@ a {
 
 .cards {
     width: 250px;
-    height: 207px;
+    height: 190px;
     border-radius: 20px;
     background-color: #ffffff;
     padding: 0px 0px 15px 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .hebergements-card {
@@ -327,11 +328,37 @@ a {
 }
 
 .hebergements-card img {
-    width: 250px;
-    height: 124px;
+    width: 240px;
+    height: 110px;
+    border: 5px solid #ffffff;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
+
+.hebergements-card .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+.hebergements-card .card-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.hebergements-card .card-rating {
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.hebergements .section-title2 {
+    margin-top: 35px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -378,7 +405,65 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activité à Marseille ******/
 
+.activity-to-marseille {
+    height: 550px;
+    margin-top: 35px;
+    padding: 30px;
+}
+
+.activity {
+    max-width: 1280px;
+    height: 439px;
+}
+
+.activity .card-subtitle3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.activity-card {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    height: 439px;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.activity-card .image-container {
+    width: 297px;
+    height: 440px;
+    background-color: #ffffff;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.activity-card .cards {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px;
+    margin-right: 50px;
+}
+
+.activity-card .card-subtitle2 {
+    width: 297px;
+    height: 59px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+.activity-card img {
+    width: 297px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    object-fit: cover;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
