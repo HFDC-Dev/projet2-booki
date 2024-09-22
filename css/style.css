@@ -47,7 +47,8 @@ nav ul {
 }
 
 nav ul li {
-    margin: 20px 35px;
+    margin-left: 65px;
+    margin-top: 20px;
 }
 
 span {
@@ -120,7 +121,7 @@ input {
     appearance: none; 
 }
 
-#search {
+.search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,6 +130,10 @@ input {
     line-height: 21.13px;
     outline: 0;
     border: 0;
+}
+
+::placeholder {
+    color: black;
 }
 
 .btn-search {
