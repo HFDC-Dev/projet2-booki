@@ -412,7 +412,8 @@ a {
 
 /****** Activité à Marseille ******/
 
-.activity-to-marseille {
+.activity-in-marseille {
+    max-width: 1340px;
     height: 550px;
     margin-top: 35px;
     padding: 30px;
@@ -468,6 +469,42 @@ a {
     background-color: #ffffff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     object-fit: cover;
+}
+
+/****** Footer ******/
+
+.footer {
+    max-width: 1340px;
+    height: 180px;
+    background-color: #F2F2F2;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-links {
+    padding: 20px;
+    line-height: 35px;
+}
+
+.footer-links:nth-child(2) { /* La colonne du milieu */
+    margin-left: 215px;
+}
+
+.footer-links:nth-child(3) { /* La colonne de droite */
+    margin-left: 235px;
+}
+
+.footer-links a {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links .footer-title {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 
