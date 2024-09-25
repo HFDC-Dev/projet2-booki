@@ -62,10 +62,11 @@ span:hover {
 
 /****** Formulaire ******/
 
+
+
 .hebergement-title {
     margin-top: 20px;
     height: 53px;
-    gap: 8px;
 }
 
 .section-title {
@@ -462,39 +463,43 @@ a {
 
 /****** Footer ******/
 
-.footer {
+.footer-container {
+    width: 100%;
     max-width: 1340px;
-    height: 180px;
+    height: 170px;
     background-color: #F2F2F2;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .footer-links {
-    padding: 20px;
-    line-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 163px;
 }
 
-.footer-links:nth-child(2) { /* La colonne du milieu */
-    margin-left: 215px;
-}
-
-.footer-links:nth-child(3) { /* La colonne de droite */
-    margin-left: 235px;
-}
-
-.footer-links a {
+.footer-links .links {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
-.footer-links .footer-title {
-    font-size: 18px;
-    font-weight: 700;
+.links:nth-child(2) {
+    margin-left: -20px;
 }
+
+.links:nth-child(3) {
+    margin-right: 300px;
+}
+
+.footer-title {
+    line-height: 20px;
+}
+
+.links a {
+    display: flex;
+    margin-top: 18px;
+}
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -548,9 +553,36 @@ a {
         font-size: 13px;
     }
 
+    .links:nth-child(2) {
+        margin-left: -10px;
+    }
+    
+    .links:nth-child(3) {
+        margin-right: 150px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    .filters-bar {
+        display: flex;
+        width: 758px;
+        height: 50px;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .filters-btn {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 1340px;
+        height: 24px;
+        margin-top: 70px;
+    }
 }
