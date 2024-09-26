@@ -62,8 +62,6 @@ span:hover {
 
 /****** Formulaire ******/
 
-
-
 .hebergement-title {
     margin-top: 20px;
     height: 53px;
@@ -414,60 +412,54 @@ a {
 /****** Activité à Marseille ******/
 
 .activity-in-marseille {
+    width: 100%;
     max-width: 1340px;
-    height: 550px;
-    margin-top: 35px;
+    height: 560px;
     padding: 30px;
+    margin-top: 35px;
+    box-sizing: border-box;
 }
 
 .activity-card {
+    width: 100%;
+    max-width: 1280px;
+    height: 440px;
     display: flex;
     justify-content: space-between;
-    width: 1280px;
-    height: 439px;
-    gap: 10px;
     margin-top: 35px;
 }
 
-.activity-card .image-container {
-    width: 297px;
-    height: 440px;
+.card-marseille {
+    width: 100%;
+    max-width: 297px;
+    height: 439px;
+    border-radius: 20px;
     background-color: #ffffff;
-    border-radius: 20px 20px 20px 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.activity-card .cards {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px;
-    margin-right: 50px;
-}
-
-.activity-card .card-subtitle2 {
-    width: 297px;
-    height: 59px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18.78px;
-    margin-top: 18px;
-    margin-left: 18px;
-}
-
-.activity-card img {
+.card-marseille img {
     width: 297px;
     height: 380px;
-    border-radius: 20px 20px 0px 0px;
-    background-color: #ffffff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
+
+.image-container h4 {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
 
 /****** Footer ******/
 
 .footer-container {
+    margin-top: 35px;
     width: 100%;
     max-width: 1340px;
     height: 170px;
     background-color: #F2F2F2;
+    box-sizing: border-box;
 }
 
 .footer-links {
@@ -518,6 +510,8 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
+
+
 }
 
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -560,6 +554,46 @@ a {
     .links:nth-child(3) {
         margin-right: 150px;
     }
+
+    .activity-in-marseille {
+        width: 100%;
+        max-width: 924px;
+        height: 390px;
+        padding: 20px;
+        margin-top: 35px;
+        box-sizing: border-box;
+    }
+    
+    .activity-card {
+        width: 100%;
+        max-width: 864px;
+        height: 270px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        gap: 30px;
+    }
+    
+    .card-marseille {
+        width: 100%;
+        max-width: 210px;
+        height: 270px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    .card-marseille img {
+        width: 193px;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    
+    .image-container .card-subtitle2 {
+        margin-top: 22px;
+    }
+    
 }
 
 /* Small devices (phones, less than 768px) */
