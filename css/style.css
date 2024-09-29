@@ -23,32 +23,29 @@ body {
 
 /****** Header ******/
 
-header {
+.navbar {
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
     width: 100%;
-    height: 79px;
+    height: auto;
 }
 
-.logo-booki img {
-    width: 61.09px;
+.logo img {
+    width: 60px;
     margin-top: 35px;
 }
 
-nav {
+.navbar ul {
     display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 65px;
     margin-top: 20px;
+}
+
+.navbar ul li {
+    margin-left: 60px;
+}
+
+.navbar ul li a {
+    color: #000000;
 }
 
 span {
@@ -60,27 +57,29 @@ span:hover {
     padding: 18px 0;
 }
 
+
 /****** Formulaire ******/
 
+.search-hebergements {
+    width: 100%;
+    height: auto;
+}
+
 .hebergement-title {
-    margin-top: 20px;
-    height: 53px;
+    margin-top: 50px;
 }
 
-.section-title {
-    height: 26px;
-    line-height: 25.83px;
-    font-weight: 700;
+.hebergement-title h1 {
     font-size: 22px;
+    margin: 0;
 }
 
-.subtitle {
-    margin-top: 10px;
-    font-weight: 400;
-    line-height: 18.78px;
+.hebergement-title p {
+    margin: 10px 0 0; 
+    line-height: 1.2;
 }
 
-.form-container {
+.search-container {
     margin-top: 35px;
     width: 377px;
     height: 49px;
@@ -146,42 +145,27 @@ input {
     color: white;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21.13px;
     cursor: pointer;
 }
 
-/****** Filtres ******/
+/******** Filtres *******/
 
 .filters {
-    width: 758px;
-    height: 50px;
     margin-top: 35px;
-}
-
-.filters-title {
     display: flex;
     align-items: center;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.13px;
-}
-
-.filters-bar {
-    display: flex;
-    width: 758px;
-    height: 50px;
+    width: 100%;
     gap: 15px;
 }
 
 .filters-btn {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
+    width: 100%;
 }
 
 .btn {
-    display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
     width: 173px;
     height: 50px;
     border: 2px solid #d9d9d9;
@@ -190,7 +174,6 @@ input {
     background-color: white;
     font-size: 17px;
     font-weight: 700;
-    line-height: 19.96px;
     cursor: pointer;
 }
 
@@ -207,7 +190,6 @@ input {
     background-color: white;
     font-size: 17px;
     font-weight: 700;
-    line-height: 19.96px;
     cursor: pointer;
 }
 
@@ -217,30 +199,33 @@ input {
 
 .btn i {
     font-size: 21px;
-    margin-right: 10px;
+    vertical-align: middle; 
+    position: relative;
+    left: -5px; 
 }
 
 .btn-fm i {
+    vertical-align: middle; 
+    position: relative;
     font-size: 22px;
-    margin-right: 10px;
+    left: -5px;
 }
 
-/****** Info logements ******/
+/****** Info Hebergement ******/
 
 .info {
     width: 100%;
-    max-width: 1340px;
-    height: 24px;
+    height: auto;
     margin-top: 35px;
 }
 
-.info-logements {
+.info-hebergements {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.info-logements i {
+.info-hebergements i {
     display: flex;
     justify-content: center;
     align-items: center;
