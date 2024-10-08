@@ -402,54 +402,6 @@ a {
 
 /****** Activité à Marseille ******/
 
-/*.marseille {
-    display: flex;
-}
-
-.activity-in-marseille {
-    width: 100%;
-    height: 560px;
-    padding: 30px;
-    margin-top: 35px;
-    box-sizing: border-box;
-}
-
-.activity-card {
-    width: 100%;
-    height: 440px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 35px;
-}
-
-.card-marseille {
-    width: 100%;
-    max-width: 297px;
-    min-height: 440px;
-    height: auto;
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-}
-
-.card-marseille img {
-    width: 100%;
-    min-height: 380px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-}
-
-.card-marseille-big {
-    min-width: 295px;
-    max-height: 200px;
-}
-
-.image-container h4 {
-    margin-top: 15px;
-    margin-left: 20px;
-}*/
-
 .activity {
     display: flex;
     margin-top: 35px;
