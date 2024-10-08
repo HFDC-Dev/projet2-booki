@@ -402,14 +402,12 @@ a {
 
 /****** Activité à Marseille ******/
 
-.marseille {
+/*.marseille {
     display: flex;
-    flex-direction: column;
 }
 
 .activity-in-marseille {
     width: 100%;
-    max-width: 1340px;
     height: 560px;
     padding: 30px;
     margin-top: 35px;
@@ -418,7 +416,6 @@ a {
 
 .activity-card {
     width: 100%;
-    max-width: 1440px;
     height: 440px;
     display: flex;
     justify-content: space-between;
@@ -433,6 +430,7 @@ a {
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 }
 
 .card-marseille img {
@@ -443,13 +441,56 @@ a {
 }
 
 .card-marseille-big {
-    min-width: 250px;
-    max-height: 100px;
+    min-width: 295px;
+    max-height: 200px;
 }
 
 .image-container h4 {
     margin-top: 15px;
     margin-left: 20px;
+}*/
+
+.activity {
+    display: flex;
+    margin-top: 35px;
+}
+
+.activity-in-marseille {
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.activity-cards {
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.activity-cards img {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.card-marseille {
+    width: 100%;
+    height: 439px;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.img-container {
+    width: 100%;
+}
+
+.card-subtitle3 {
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 
@@ -512,14 +553,6 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
-
-    /*.card-marseille {
-        max-width: 20vw;
-    }
-
-    .card-marseille img {
-        max-width: 20vw;
-    }*/
     
 
 }
@@ -570,45 +603,6 @@ a {
     .links:nth-child(3) {
         margin-right: 150px;
     }
-
-    /*.activity-in-marseille {
-        width: 100%;
-        height: 390px;
-        padding: 20px;
-        margin-top: 35px;
-        box-sizing: border-box;
-    }
-    
-    .activity-card {
-        width: 100%;
-        max-width: 864px;
-        min-height: 270px;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 35px;
-        gap: 30px;
-    }
-    
-    .card-marseille {
-        width: 100%;
-        max-width: 210px;
-        min-height: 270px;
-        background-color: #ffffff;
-        border-radius: 20px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-    
-    .card-marseille img {
-        width: 193px;
-        height: 200px;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
-    }
-    
-    .image-container .card-subtitle2 {
-        margin-top: 22px;
-    }*/
     
 }
 
@@ -763,14 +757,5 @@ a {
 
     /******* Activité à Marseille *******/
 
-    /*.activity-card {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card-marseille {
-        width: 315px;
-        height: 200px;
-    }*/
     
 }
