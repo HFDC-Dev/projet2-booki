@@ -612,7 +612,6 @@ a {
 
     .main-container {
         width: 100%;
-        max-width: 1440px;
         padding: 0px;
         box-sizing: border-box;
     }
@@ -637,15 +636,29 @@ a {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        margin-top: 30px;
+        border-bottom: 2px solid #F2F2F2;
+        padding: 15px 0;
     }
 
     .navbar ul li {
         margin-left: 0;
     }
+    
+    .nav-line:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        padding: 15px 0;
+    }
+
+    /***** Barre de recherche *****/
+
+    .hebergement-title {
+        margin-top: 30px;
+    }
 
     .search-hebergements {
-        padding: 0 20px 0 20px;
+        width: 80%;
+        padding: 0 25px 0 25px;
     }
 
     .search-container {
@@ -805,5 +818,9 @@ a {
 
     .footer-links {
         flex-direction: column;
+    }
+
+    .links:nth-child(2) {
+        margin-left: 0;
     }
 }
