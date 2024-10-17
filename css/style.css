@@ -695,10 +695,6 @@ a {
 
     /****** Filtres ******/
 
-    .filters {
-        /*width: 335px;*/
-    }
-
     .filters-btn {
         display: flex;
         flex-wrap: wrap;
