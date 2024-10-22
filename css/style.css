@@ -34,6 +34,8 @@ body {
     margin-top: 35px;
 }
 
+/****** Liens *****/
+
 .navbar ul {
     display: flex;
     margin-top: 20px;
@@ -45,17 +47,27 @@ body {
 
 .navbar ul li a {
     color: #000000;
+    position: relative; /* Pour permettre l'utilisation de ::before et ::after */
+    padding: 20px 0;
 }
 
-.nav-line {
+.navbar ul li a:hover {
     color: #0065FC;
 }
 
-.nav-line:hover {
-    border-top: 2px solid blue;
-    padding: 18px 0;
+/* Ligne bleue au-dessus par défaut */
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; /* La ligne bleue est au-dessus */
+    height: 2px;
 }
 
+.navbar ul li a:hover::before {
+    background-color: #0065FC;
+}
 
 /****** Formulaire ******/
 
@@ -506,7 +518,6 @@ a {
         flex-wrap: wrap;
     }
     
-
 }
 
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -522,6 +533,19 @@ a {
     .filters {
         flex-direction: column;
         align-items: flex-start;
+        gap: 20px;
+    }
+
+    .btn {
+        width: 161px;
+        height: 50px;
+        border: 2px solid #d9d9d9;
+        border-radius: 25px;
+        padding: 4px 19px 4px 19px;
+        background-color: white;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
     }
 
     .hebergements-and-populaires {
@@ -633,22 +657,32 @@ a {
     }
 
     .navbar ul {
-        width: 100%;
         display: flex;
         justify-content: space-around;
         border-bottom: 2px solid #F2F2F2;
-        padding: 15px 0;
+        width: 100%;
     }
 
     .navbar ul li {
-        margin-left: 0;
-        margin-right: 30px;
+        margin: 0;
+        flex-grow: 1; /* Permet à chaque li de prendre toute la largeur disponible */
     }
-    
-    .nav-line:hover {
-        border-top: none;
-        border-bottom: 2px solid #0065FC;
+
+    .navbar ul li a {
         padding: 15px 0;
+        text-align: center;
+        display: block; /* Le lien prend toute la largeur de son parent */
+        width: 100%; /* Le lien occupe toute la largeur */
+    }
+
+    /* Ligne bleue en dessous à partir de 725px */
+    .navbar ul li a::before {
+        top: auto;
+        bottom: -2px; /* La ligne est déplacée en dessous du lien */
+    }
+
+    .navbar ul li a:hover::before {
+        background-color: #0065FC; /* Active la ligne bleue au hover */
     }
 
     /***** Barre de recherche *****/
@@ -698,31 +732,34 @@ a {
     .filters-btn {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 10px;
     }
 
     .filters-btn button {
-        flex: 0 1 calc(50% - 10px); /* Chaque bouton prend 50% de la largeur, moins l'espace (gap) */
+        flex: 0 1 calc(50% - 5px); /* Chaque bouton prend 50% de la largeur, moins l'espace (gap) */
     }
 
     .btn {
-        font-size: 13px;
-        padding: 2px 20px 0px 19px;
+        font-size: 14px;
+        padding: 3px 20px 0px 19px;
+        margin-bottom: 10px;
     }
 
     .btn i {
         font-size: 18px;
+        bottom: 2px;
     }
 
     .btn-fm {
         width: 173px;
-        font-size: 13px;
-        padding: 2px 48px 0px 19px;
+        font-size: 14px;
+        padding: 3px 48px 0px 19px;
     }
 
     .btn-fm i {
         font-size: 20px;
         margin-right: 5px;
+        bottom: 2px;
     }
 
     .info {
