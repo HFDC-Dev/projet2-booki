@@ -314,58 +314,61 @@ a {
     width: 65%;
 }
 
-.cards {
+.hebergements-card {
     width: 100%;
-    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    row-gap: 35px;
+}
+
+.hebergements-card a {
+    width: 31%;
+    height: auto;
+}
+
+.cards {
     border: 5px solid white;
     border-radius: 20px;
     background-color: #ffffff;
-    padding: 0px 0px 15px 0px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.hebergements-card {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.hebergements-card img {
+.cards img {
     width: 100%;
-    min-width: 230px;
-    height: 110px;
-    border-radius: 15px 15px 0px 0px;
+    height: 105px;
     object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
 }
 
-.hebergements-card .card-content {
+.cards .card-content {
     padding-left: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
-.hebergements-card .card-title {
+.cards .card-title {
     margin-top: 5px;
 }
 
 
-.hebergements-card .card-subtitle {
+.cards .card-subtitle {
     font-size: 14px;
     font-weight: 400;
     margin-top: 8px;
 }
 
-.hebergements-card .card-rating {
+.cards .card-rating {
     font-size: 17px;
     margin-top: 5px;
 }
 
 .hebergements .section-title2 {
-    margin-top: 35px;
+    margin-top: 30px;
 }
+
 
 
 /****** Populaires ***********/
@@ -556,9 +559,23 @@ a {
         flex-direction: column;
     }
 
+    /****** Hebergements ******/
+
     .hebergements {
         width: 100%;
     }
+
+    .hebergements-card {
+        display: flex;
+        row-gap: 35px;
+    }
+
+    .hebergements-card a {
+        width: 31%;
+        height: auto;
+    }
+
+    /****** Populaires *****/
 
     .populaires {
         width: 100%;
@@ -668,6 +685,7 @@ a {
     }
 
     .navbar ul li {
+        width: 50%;
         margin: 0;
         flex-grow: 1; /* Permet à chaque li de prendre toute la largeur disponible */
     }
@@ -797,7 +815,7 @@ a {
     }
 
     .hebergements {
-        width: 98%;
+        width: 100%;
     }
 
     .hebergements-card {
